@@ -21,6 +21,11 @@ jobs:
           python-version: '3.9'
           cache: 'poetry'
 
+      - name: doc-qa tests
+        run: |
+          make install-doc-qa
+          make test-doc-qa
+
       - name: qr-reader tests
         run: |
           make install-qr-reader
