@@ -4538,10 +4538,10 @@ doc = ["furo", "jaraco.packaging (>=9.3)", "jaraco.tidelift (>=1.4)", "rst.linke
 test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", "jaraco.test", "more-itertools", "pytest (>=6,!=8.1.*)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=2.2)", "pytest-ignore-flaky", "pytest-mypy", "pytest-ruff (>=0.2.1)"]
 
 [extras]
-all = ["controlnet-aux", "depth-anything-v2", "easyocr", "einops", "loca", "pymupdf", "pytesseract", "qreader", "scipy", "timm", "transformers"]
+all = ["controlnet-aux", "depth-anything-v2", "easyocr", "einops", "loca", "pymupdf", "pytesseract", "qreader", "scipy", "tesseract-ocr-data", "timm", "transformers"]
 controlnet-aux = ["controlnet-aux"]
 depth-anything-v2-model = ["depth-anything-v2"]
-doc-qa = ["easyocr", "pymupdf", "pytesseract"]
+doc-qa = ["easyocr", "pymupdf", "pytesseract", "tesseract-ocr-data"]
 florencev2 = ["einops", "scipy", "timm", "transformers"]
 florencev2-qa = ["einops", "scipy", "timm", "transformers"]
 loca-model = ["loca"]
@@ -4552,4 +4552,4 @@ qr-reader = ["qreader"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<4.0"
-content-hash = "f77d8bb9022a0ea00fd9308df69d6b645a1e9b316364aa9943665a32e8cc8c13"
+content-hash = "cc33a3abfa26b320e02da1917c2e558459554aa295a9d7502c4b529ed209a630"
