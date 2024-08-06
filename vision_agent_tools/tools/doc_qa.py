@@ -52,7 +52,6 @@ class DocumentQA(BaseTool):
             pix = page.get_pixmap()
             img = Image.open(BytesIO(pix.tobytes()))
             text += self.ocr_tool_pdf.image_to_string(img)
-            print(text)
         return text
 
     def answer_question(self, text: str, question: str) -> str:

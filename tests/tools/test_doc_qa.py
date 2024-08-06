@@ -23,6 +23,3 @@ def test_successful_doc_qa_from_pdf():
     answer = document_qa(file=file, question="What is the percentage range of attribute LAIs that are due to unknown incidents?")
 
     assert answer == "6% and 74%"
-
-test_successful_doc_qa_from_pdf()
-test_successful_doc_qa_from_image()
