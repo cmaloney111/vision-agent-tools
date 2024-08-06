@@ -1,0 +1,25 @@
+# DocumentQA
+
+This example demonstrates using the DocumentQAQA tool to answer questions about documents.
+
+```python
+from vision_agent_tools.tools.doc_qa import DocumentQA
+
+# (replace this path with your own!) 
+test_image = "path/to/your/document.jpg"
+document = Image.open(test_image)
+
+# also works with pdf files (replace this path with your own)
+document = "path/to/your/document.pdf"
+
+# Initialize DocumentQA model
+run_document_qa = DocumentQA()
+
+# Time to put DocumentQA to work! Let's pose a question about the document
+answer = run_document_qa(document, question="What is the hottest day of the year?")
+
+# Print the output answer
+print(answer)
+```
+
+::: vision_agent_tools.tools.doc_qa
