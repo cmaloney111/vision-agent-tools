@@ -3697,17 +3697,6 @@ mpmath = ">=1.1.0,<1.4"
 dev = ["hypothesis (>=6.70.0)", "pytest (>=7.1.0)"]
 
 [[package]]
-name = "tesseract-ocr-data"
-version = "1.6"
-description = "tesseract-ocr data for projects using it without having to install it."
-optional = true
-python-versions = ">=3.7"
-files = [
-    {file = "tesseract-ocr-data-1.6.tar.gz", hash = "sha256:a564b01b841ab9a5cd91693e9a6e817ab376114e56d36696a142115978010f7b"},
-    {file = "tesseract_ocr_data-1.6-py3-none-any.whl", hash = "sha256:7f771199817d6456810230ff15355411929466d872e3db3fa02a6a4c96a9afeb"},
-]
-
-[[package]]
 name = "tifffile"
 version = "2024.7.24"
 description = "Read and write TIFF files"
@@ -4538,10 +4527,10 @@ doc = ["furo", "jaraco.packaging (>=9.3)", "jaraco.tidelift (>=1.4)", "rst.linke
 test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", "jaraco.test", "more-itertools", "pytest (>=6,!=8.1.*)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=2.2)", "pytest-ignore-flaky", "pytest-mypy", "pytest-ruff (>=0.2.1)"]
 
 [extras]
-all = ["controlnet-aux", "depth-anything-v2", "easyocr", "einops", "loca", "pymupdf", "pytesseract", "qreader", "scipy", "tesseract-ocr-data", "timm", "transformers"]
+all = ["controlnet-aux", "depth-anything-v2", "easyocr", "einops", "loca", "pymupdf", "pytesseract", "qreader", "scipy", "timm", "transformers", "transformers"]
 controlnet-aux = ["controlnet-aux"]
 depth-anything-v2-model = ["depth-anything-v2"]
-doc-qa = ["easyocr", "pymupdf", "pytesseract", "tesseract-ocr-data"]
+doc-qa = ["easyocr", "pymupdf", "pytesseract", "transformers"]
 florencev2 = ["einops", "scipy", "timm", "transformers"]
 florencev2-qa = ["einops", "scipy", "timm", "transformers"]
 loca-model = ["loca"]
@@ -4552,4 +4541,4 @@ qr-reader = ["qreader"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<4.0"
-content-hash = "cc33a3abfa26b320e02da1917c2e558459554aa295a9d7502c4b529ed209a630"
+content-hash = "8effc34c62ccf9c2fff7bd1fbbad7be5373ed67fac48b1ec3f61fde85eaa4950"

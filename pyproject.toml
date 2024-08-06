@@ -29,7 +29,6 @@ controlnet-aux = {version = "^0.0.9", optional = true}
 pymupdf = {version = "^1.24.9", optional = true}
 easyocr = {version = "^1.7.1", optional = true}
 pytesseract = {version = "^0.3.10", optional = true}
-tesseract-ocr-data = {version = "^1.6", optional = true}
 
 
 [tool.poetry.group.dev.dependencies]
@@ -44,7 +43,7 @@ mkdocs-material = "^9.5.28"
 griffe-fieldz = "^0.1.2"
 
 [tool.poetry.extras]
-all = ["qreader", "transformers", "scipy", "loca", "depth-anything-v2", "timm", "einops", "controlnet-aux", "pymupdf", "easyocr", "pytesseract", "tesseract-ocr-data"]
+all = ["qreader", "transformers", "scipy", "loca", "depth-anything-v2", "timm", "einops", "controlnet-aux", "pymupdf", "easyocr", "pytesseract", "transformers"]
 qr-reader = ["qreader"]
 owlv2 = ["transformers", "scipy"]
 florencev2 = ["transformers", "scipy", "timm", "einops"]
@@ -53,7 +52,7 @@ depth-anything-v2-model = ["depth-anything-v2"]
 nsfw-classification = ["transformers", "scipy"]
 controlnet-aux = ["controlnet-aux"]
 florencev2-qa = ["transformers", "scipy", "timm", "einops"]
-doc-qa = ["pymupdf", "easyocr", "pytesseract", "tesseract-ocr-data"]
+doc-qa = ["pymupdf", "easyocr", "pytesseract", "transformers"]
 
 [build-system]
 requires = ["poetry-core", "setuptools", "packaging", "wheel"]
