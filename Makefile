@@ -44,6 +44,13 @@ install-florencev2-qa:
 	$(POETRY) install -E florencev2-qa --no-interaction
 	pip install flash-attn
 
+install-doc-qa:
+	# Install doc-qa dependencies only
+	$(POETRY) install -E doc-qa --no-interaction
+	sudo apt update
+	sudo apt install tesseract-ocr
+	sudo apt install libtesseract-dev
+
 test:
 	# Run all unit tests (experimental due posible dependencies conflict)
 	$(POETRY) run pytest tests
@@ -87,3 +94,7 @@ test-controlnet-aux:
 test-florencev2-qa:
 	# Run florencev2-qa unit tests
 	$(POETRY) run pytest tests/tools/test_florencev2_qa.py
+
+test-doc-qa:
+	# Run doc-qa unit tests
+	$(POETRY) run pytest tests/tools/test_doc_qa.py
